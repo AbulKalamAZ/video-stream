@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Ning Video Stream</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container-title">Ning Video Stream</h1>
+
+    <div id="selectRoom">
+      <label for="name">Your Name</label>
+      <input id="name" type="text" />
+      <!-- <label for="roomNumber">Type the room number</label>
+      <input id="roomNumber" type="text" /> -->
+      <button id="joinBroadcaster">Stream Video</button>
+      <button id="joinViewer">Join as Viewer</button>
+    </div>
+
+    <div id="consultingRoom" style="display: none">
+      <video autoplay></video>
+      <p id="broadcasterName"></p>
+      <p id="shareable-link"></p>
+      <ul id="viewers"></ul>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
