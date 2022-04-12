@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agilityfeat/webrtc-video-conference-tutorial.git"
+    "url": "git+https://github.com/AbulKalamAZ/video-stream.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/agilityfeat/webrtc-video-conference-tutorial/issues"
+    "url": "https://github.com/AbulKalamAZ/video-stream/issues"
   },
-  "homepage": "https://github.com/agilityfeat/webrtc-video-conference-tutorial#readme",
+  "homepage": "https://github.com/AbulKalamAZ/video-stream#readme",
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^2.0.15",
