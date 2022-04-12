@@ -163,6 +163,7 @@ socket.on("offer", function (broadcaster, sdp) {
     });
 
   rtcPeerConnections[broadcaster.id].ontrack = (event) => {
+    console.log(event);
     videoElement.srcObject = event.streams[0];
   };
 
