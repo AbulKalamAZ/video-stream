@@ -103,7 +103,7 @@ btnJoinViewer.onclick = function () {
     };
 
     divSelectRoom.style = "display: none;";
-    divConsultingRoom.style = "display: block;";
+    divConsultingRoom.style = "display: flex;";
 
     socket.emit("register as viewer", user);
   }
