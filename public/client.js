@@ -16,10 +16,26 @@ let rtcPeerConnections = {};
 
 // constants
 const iceServers = {
-  iceServers: [
-    { urls: "stun:stun.services.mozilla.com" },
-    { urls: "stun:stun.l.google.com:19302" },
-  ],
+  // iceServers: [
+  //   { urls: "stun:stun.services.mozilla.com" },
+  //   { urls: "stun:stun.l.google.com:19302" },
+  // ],
+  iceServers: [{
+    urls: [ "stun:ss-turn2.xirsys.com" ]
+ }, {
+    username: "43EP--ehcvHzvwYQryGDdBGJ17Hro5R1hYwyjbT_6bTG8Lpazh2spouAhAqG5hTKAAAAAGJWnLNBYnVsS2FsYW1BWg==",
+    credential: "09621b34-bb0f-11ec-9d43-0242ac140004",
+    urls: [
+        "turn:ss-turn2.xirsys.com:80?transport=udp",
+        "turn:ss-turn2.xirsys.com:3478?transport=udp",
+        "turn:ss-turn2.xirsys.com:80?transport=tcp",
+        "turn:ss-turn2.xirsys.com:3478?transport=tcp",
+        "turns:ss-turn2.xirsys.com:443?transport=tcp",
+        "turns:ss-turn2.xirsys.com:5349?transport=tcp"
+    ]
+ }]
+ 
+ 
 };
 
 // random room number
