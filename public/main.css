@@ -5,6 +5,46 @@
   font-family: "Roboto", sans-serif;
 }
 
+.link-back-card-anchor {
+  position: absolute;
+  top: 44px;
+  text-decoration: none;
+  transition: top 200ms ease-in;
+}
+
+.link-back-card-anchor:hover {
+  top: 40px;
+}
+
+.link-back-card {
+  width: 640px;
+  padding: 1rem;
+  background-color: #062c30;
+  box-shadow: 2px 4px 8px rgba(6, 44, 48, 0.5);
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in;
+}
+
+.link-back-card:hover {
+  box-shadow: 4px 8px 18px rgba(6, 44, 48, 0.5);
+}
+
+.link-back-card h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.link-back-card p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
 .container {
   position: absolute;
   top: 0;
